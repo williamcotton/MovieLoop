@@ -17,6 +17,7 @@
 		28D7ACF80DDB3853001CB0EB /* MovieLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* MovieLoopViewController.m */; };
 		DA7DDEDC10C4D6EE0049C067 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7DDEDB10C4D6EE0049C067 /* MediaPlayer.framework */; };
 		DA7DDF5310C4EA6D0049C067 /* countdown.3gp in Resources */ = {isa = PBXBuildFile; fileRef = DA7DDF5210C4EA6D0049C067 /* countdown.3gp */; };
+		DA913C4110C4F7A900390DA4 /* MPMoviePlayerControllerExtended.m in Sources */ = {isa = PBXBuildFile; fileRef = DA913C4010C4F7A900390DA4 /* MPMoviePlayerControllerExtended.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		8D1107310486CEB800E47090 /* MovieLoop-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MovieLoop-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		DA7DDEDB10C4D6EE0049C067 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		DA7DDF5210C4EA6D0049C067 /* countdown.3gp */ = {isa = PBXFileReference; lastKnownFileType = file; path = countdown.3gp; sourceTree = "<group>"; };
+		DA913C3F10C4F7A900390DA4 /* MPMoviePlayerControllerExtended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPMoviePlayerControllerExtended.h; sourceTree = "<group>"; };
+		DA913C4010C4F7A900390DA4 /* MPMoviePlayerControllerExtended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPMoviePlayerControllerExtended.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +62,8 @@
 				1D3623250D0F684500981E51 /* MovieLoopAppDelegate.m */,
 				28D7ACF60DDB3853001CB0EB /* MovieLoopViewController.h */,
 				28D7ACF70DDB3853001CB0EB /* MovieLoopViewController.m */,
+				DA913C3F10C4F7A900390DA4 /* MPMoviePlayerControllerExtended.h */,
+				DA913C4010C4F7A900390DA4 /* MPMoviePlayerControllerExtended.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -172,6 +177,7 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* MovieLoopAppDelegate.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* MovieLoopViewController.m in Sources */,
+				DA913C4110C4F7A900390DA4 /* MPMoviePlayerControllerExtended.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
