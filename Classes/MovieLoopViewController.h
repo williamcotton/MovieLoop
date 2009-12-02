@@ -8,10 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <MediaPlayer/MediaPlayer.h>
-#import "MPMoviePlayerControllerExtended.h"
 
 @interface MovieLoopViewController : UIViewController {
-	MPMoviePlayerControllerExtended * mMoviePlayer;
+	MPMoviePlayerController * mMoviePlayer;
 }
 
 @end

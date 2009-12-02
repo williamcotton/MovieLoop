@@ -11,7 +11,6 @@
 @implementation MovieLoopViewController
 
 - (void)viewDidLoad {
-	
     [super viewDidLoad];
 	
 	NSURL* mMovieURL;
@@ -27,12 +26,24 @@
 	}
 	
 	
-	mMoviePlayer = [[MPMoviePlayerControllerExtended alloc] initWithContentURL:mMovieURL];
+	mMoviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:mMovieURL];
 	[mMovieURL release];
 	[[UIApplication sharedApplication] setStatusBarHidden:YES];
 	
-	[mMoviePlayer loop];
+	[[NSNotificationCenter defaultCenter] addObserver:self 
+											 selector:@selector(moviePlayBackDidFinish:) 
+												 name:MPMoviePlayerPlaybackDidFinishNotification 
+											   object:mMoviePlayer];
+	[mMoviePlayer play];
 	
+}
+
+
+- (void) moviePlayBackDidFinish:(NSNotification*)notification
+{
+	mMoviePlayer = [notification object];
+	//mMoviePlayer.initialPlaybackTime = -1.0; // Memory Leak!!
+	[mMoviePlayer play];
 }
 
 - (void)didReceiveMemoryWarning {
